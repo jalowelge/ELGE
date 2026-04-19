@@ -1,8 +1,32 @@
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <div class="badge-base LI-profile-badge" data-locale="de_DE" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jalowelge" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://at.linkedin.com/in/jalowelge?trk=profile-badge">Jallow Alagie</a></div>
 EAALgDXgbIIABRDipXDX5yX2rHf7OTvDb2vbKE5Jtd29ZBBZBL224OIZB3xLZClhCmkGDVuZBsIhDdEl0BCPQstJkunhtXr6EIb7MiJglPqrl7tJBfgcldLashRwDJqJpy6VHfJ99M9nlgteW0YXxgS9ccRYtxfOLXyUjyhNN86By8V4XpMdfZA25rBZBxvZBYVj5EuBYGehq1I09c4EirgSnYFEXu4q2G2fJ
-Search for a field
-{
-  "id": "2231596287646492",
-  "name": "Jallow Alagie"
-}
+==== Query
+  curl -i -X GET \
+   "https://graph.facebook.com/v20.0/me?fields=id%2Cname&access_token=<access token sanitized>"
+==== Access Token Info
+  {
+    "perms": [
+      "public_profile"
+    ],
+    "user_id": 2231596287646492,
+    "app_id": 809298407661696
+  }
+==== Parameters
+- Query Parameters
+
+
+  {
+    "fields": "id,name"
+  }
+- POST Parameters
+
+
+  {}
+==== Response
+  {
+    "id": "2231596287646492",
+    "name": "Jallow Alagie"
+  }
+==== Debug Information from Graph API Explorer
+- https://developers.facebook.com/tools/explorer/?method=GET&path=me%3Ffields%3Did%2Cname&version=v20.0
