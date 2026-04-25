@@ -1,0 +1,53 @@
+{
+    "issuer": "https://www.linkedin.com",
+    "authorization_endpoint": "https://www.linkedin.com/oauth/v2/authorization",
+    "token_endpoint": "https://www.linkedin.com/oauth/v2/accessToken",
+    "userinfo_endpoint": "https://api.linkedin.com/v2/userinfo",
+    "jwks_uri": "https://www.linkedin.com/oauth/openid/jwks",
+    "response_types_supported": [
+        "code"
+    ],
+    "subject_types_supported": [
+        "pairwise"
+    ],
+    "id_token_signing_alg_values_supported": [
+        "RS256"
+    ],
+    "scopes_supported": [
+        "openid",
+        "profile",
+        "email"
+    ],
+    "claims_supported": [
+        "iss",
+        "aud",
+        "iat",
+        "exp",
+        "sub",
+        "name",
+        "given_name",
+        "family_name",
+        "picture",
+        "email",
+        "email_verified",
+        "locale"
+    ]
+}
+{
+    "sub": "782bbtaQ",
+    "name": "Jallow Alagie",
+    "given_name": "Jallow",
+    "family_name": "Alagie",
+    "picture": "https://www.linkedin.com/in/jalowelge",
+    "locale": "Oceania",
+    "email": "alagiejallow211@gmail.com",
+    "email_verified": true
+}
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="de_DE" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="jalowelge" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://de.linkedin.com/in/jalowelge?trk=profile-badge">Jallow Alagie</a></div>
+docker run --rm -v "$PWD/data:/app/data" ghcr.io/hermione-granger-1176/linkedin-analyzer:latest --version 
+pip install linkedin-analyzer
+linkedin-analyzer shares
+linkedin-analyzer comments
+linkedin-analyzer messages
+linkedin-analyzer connections
+linkedin-analyzer all
